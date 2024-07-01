@@ -1,0 +1,37 @@
+:root {
+  background-color: #242424;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font: {
+    family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    size: 62.5%;
+    weight: 400;
+  }
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+blockquote,
+body,
+button,
+h1,
+h2,
+h3,
+h4,
+ol,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  font-size: 1.4rem;
+  margin: 0;
+  min-height: 100vh;
+  min-width: 320px;
+  place-items: center;
+}
