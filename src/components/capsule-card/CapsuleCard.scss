@@ -5,6 +5,12 @@
   overflow: hidden;
   position: relative;
 
+  &__button {
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+  }
+
   &__content {
     display: flex;
     flex-flow: column;
@@ -22,11 +28,20 @@
   &__info {
     background-color: #465557;
     flex: 1;
+    opacity: 0;
+    padding: 20px;
+    position: relative;
+    transform: translateY(100%);
+    transition: transform .4s ease-in, opacity 1s ease;
   }
 
   &__media {
     background-color: darkslategray;
     height: 180px;
+    opacity: 0;
+    overflow: hidden; // Hides the sides and bottom of the video in case aspect ratio is off
+    transform: translateY(calc(116% + 180px));
+    transition: transform .5s ease-in, opacity .8s ease;
     width: 100%;
   }
 
@@ -42,7 +57,11 @@
   }
 
   &__title {
-    font-size: 2rem;
+    font: {
+      size: 2rem;
+      weight: 700;
+    }
+    margin-bottom: 4px;
   }
 
   &__video {
@@ -53,13 +72,35 @@
     #{$self} {
       &__discount {
         transform: translateY(-20px);
-        transition: transform .6s ease-out;
+        transition: transform .4s ease-out;
+      }
+
+      &__info {
+        opacity: 1;
+        transform: translateY(0);
+        transition: transform .4s ease-out, opacity .4s ease-out;
       }
 
       &__link {
         opacity: .2;
         transition: opacity .6s ease;
       }
+
+      &__media {
+        opacity: 1;
+        transform: translateY(0);
+        transition: transform .4s ease-out, opacity .6s ease;
+      }
     }
   }
+}
+
+.button {
+  background-color: #89a905;
+  color: #000;
+  font: {
+    size: 1.5rem;
+    weight: 600;
+  }
+  padding: 2% 4%;
 }

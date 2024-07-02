@@ -1,0 +1,14 @@
+.tags {
+  &__list {
+    display: flex;
+    flex-flow: wrap;
+    gap: 4px;
+    margin-top: 10px;
+
+    &-item {
+      background-color: rgba(0, 0, 0, .2);
+      font-size: 1.1rem;
+      padding: 2px 6px;
+    }
+  }
+}
