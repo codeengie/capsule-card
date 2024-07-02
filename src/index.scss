@@ -1,9 +1,11 @@
+$font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
 :root {
   background-color: #242424;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   font: {
-    family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    family: $font-family;
     size: 62.5%;
     weight: 400;
   }
@@ -34,4 +36,15 @@ body {
   min-height: 100vh;
   min-width: 320px;
   place-items: center;
+}
+
+button {
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+  font-family: $font-family;
+}
+
+ul {
+  list-style: none;
 }
