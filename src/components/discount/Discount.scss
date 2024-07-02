@@ -1,0 +1,47 @@
+.discount {
+  $self: &;
+
+  background-color: #000;
+  bottom: 0;
+  font: {
+    size: 1.6rem;
+    weight: 600;
+  }
+  position: absolute;
+  right: 0;
+
+  &__computed,
+  &__percent {
+    display: none;
+  }
+
+  &__percent {
+    background-color: #a1cd43;
+    color: #000;
+    padding: 6px;
+  }
+
+  &__price {
+    display: inline-block;
+    padding: 8px;
+  }
+
+  &--sale {
+    #{$self} {
+      &__computed,
+      &__percent {
+        display: inline-block;
+      }
+
+      &__computed {
+        padding-right: 6px;
+      }
+
+      &__price {
+        color: dimgray;
+        padding: 0 4px 0 6px;
+        text-decoration: line-through;
+      }
+    }
+  }
+}
