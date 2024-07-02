@@ -1,0 +1,65 @@
+.capsule-card {
+  $self: &;
+
+  max-width: 325px;
+  overflow: hidden;
+  position: relative;
+
+  &__content {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &__discount {
+    transform: translateY(0);
+    transition: transform .4s ease-out;
+  }
+
+  &__info {
+    background-color: #465557;
+    flex: 1;
+  }
+
+  &__media {
+    background-color: darkslategray;
+    height: 180px;
+    width: 100%;
+  }
+
+  &__link {
+    display: flex;
+    opacity: 1;
+    transition: opacity .4s ease;
+  }
+
+  &__poster {
+    height: auto;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__video {
+    width: 100%;
+  }
+
+  &:hover {
+    #{$self} {
+      &__discount {
+        transform: translateY(-20px);
+        transition: transform .6s ease-out;
+      }
+
+      &__link {
+        opacity: .2;
+        transition: opacity .6s ease;
+      }
+    }
+  }
+}
