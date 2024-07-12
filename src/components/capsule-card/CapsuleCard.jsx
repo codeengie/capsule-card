@@ -6,7 +6,7 @@ import Tags from "../tags/Tags.jsx";
 import CapsulePoster from '../../assets/images/hogwarts-legacy.jpg'
 import CapsuleVideo from '../../assets/videos/hogwarts-legacy.webm'
 
-const CapsuleCard = () => {
+const CapsuleCard = (props) => {
     return (
         <div className="capsule-card">
             <a className="capsule-card__link" href="#">
@@ -20,13 +20,13 @@ const CapsuleCard = () => {
                     </video>
                 </div>
                 <div className="capsule-card__info">
-                    <h1 className="capsule-card__title">Hogwarts Legacy</h1>
+                    <h1 className="capsule-card__title">{props.data.title}</h1>
                     <Stats className="capsule-card__stats"/>
                     <Tags className="capsule-card__tags"/>
                     <button className="button capsule-card__button">Add to Cart</button>
                 </div>
             </div>
-            <Discount className="capsule-card__discount"/>
+            <Discount className="capsule-card__discount" discount={props.data.discount} price={props.data.price}/>
         </div>
     )
 }
