@@ -12,22 +12,36 @@ const games = [
             summary: "Very Positive"
         },
         media: {
-            poster: "hogwarts-legacy.jpg",
-            video: "hogwarts-legacy.webm"
+            poster: "hogwarts-legacy-374x448.webp",
+            video: "hogwarts-legacy-630x354.webm"
         }
     },
     {
-        title: "Aliens: Dark Descent",
-        price: 29.99,
+        title: "The Last Of Us Part I",
+        price: 59.99,
         discount: 0,
-        tags: ['Strategy', 'Action', 'Tactical', 'RTS', 'Sci-fi', 'Aliens'],
+        tags: ['Shooter', 'Story Rich', 'Post-apocalyptic', 'Horror'],
         reviews: {
-            count: 10174,
-            summary: "Very Positive"
+            count: 31084,
+            summary: "Mostly Positive"
         },
         media: {
-            poster: "aliens-dark-descent.jpg",
-            video: "aliens-dark-descent.webm"
+            poster: "the-last-of-us-374x448.webp",
+            video: "the-last-of-us-630x354.webm"
+        }
+    },
+    {
+        title: "Star Wars Jedi: Survivor",
+        price: 69.99,
+        discount: 20,
+        tags: ['Action', 'Adventure', 'Souls-like', 'Singleplayer'],
+        reviews: {
+            count: 49684,
+            summary: "Mixed"
+        },
+        media: {
+            poster: "star-wars-jedi-survivor-374x448.webp",
+            video: "star-wars-jedi-survivor-630x354.webm"
         }
     }
 ];
@@ -36,7 +50,7 @@ function App() {
     let content = null;
 
     if (games.length > 0) {
-        content = games.map((item, index) => <CapsuleCard key={index} data={games[index]}/>);
+        content = games.map((item, index) => <CapsuleCard key={index} data={item}/>);
     }
 
     return (
