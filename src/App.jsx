@@ -31,6 +31,20 @@ const games = [
         }
     },
     {
+        title: "Marvel vs. Capcom Fighting Collection: Arcade Classics",
+        price: 39.99,
+        discount: 12,
+        tags: ['Action', '2D Fighter', 'Multiplayer', 'Singleplayer'],
+        reviews: {
+            count: 0,
+            summary: ""
+        },
+        media: {
+            poster: "mvc-arcade-classics-374x448.webp",
+            video: "mvc-arcade-classics-630x354.webm"
+        }
+    },
+    {
         title: "Star Wars Jedi: Survivor",
         price: 69.99,
         discount: 20,
