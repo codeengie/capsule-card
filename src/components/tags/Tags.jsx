@@ -1,14 +1,16 @@
 import './Tag.scss';
 
-const Tags = () => {
+const Tags = ({tags}) => {
+    let content = null;
+
+    if (tags.length > 0) {
+        content = tags.map((item, index) => <li key={index} className='tags__list-item'>{item}</li>);
+    }
+
     return (
         <div className="tags">
             <ul className="tags__list">
-                <li className="tags__list-item">Magic</li>
-                <li className="tags__list-item">Fantasy</li>
-                <li className="tags__list-item">Open World</li>
-                <li className="tags__list-item">Singleplayer</li>
-                <li className="tags__list-item">Adventure</li>
+                {content}
             </ul>
         </div>
     )

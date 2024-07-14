@@ -1,7 +1,8 @@
 import './Stats.scss';
 
-const Stats = ({...props}) => {
+const Stats = ({reviews, ...props}) => {
     let cssClasses = `stats`;
+    const prettifyCount = `(${reviews['count'].toLocaleString('en-US')})`;
 
     if (props.className) {
         cssClasses += ` ${props.className}`;
@@ -9,8 +10,8 @@ const Stats = ({...props}) => {
 
     return (
         <div className={cssClasses}>
-            <span className="stats__review">Very Positive</span>
-            <span className="stats__count">(193,563)</span>
+            <span className="stats__review">{reviews.summary}</span>
+            <span className="stats__count">{prettifyCount}</span>
         </div>
     )
 }
