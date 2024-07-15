@@ -1,7 +1,7 @@
 import './Stats.scss';
 
 const Stats = ({reviews, ...props}) => {
-    let cssClasses = `stats`;
+    let cssClasses = 'stats';
     const prettifyCount = `(${reviews['count'].toLocaleString('en-US')})`;
     let content = 'No user reviews';
 

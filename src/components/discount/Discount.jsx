@@ -1,7 +1,7 @@
 import './Discount.scss';
 
 const Discount = ({discount, price, ...props}) => {
-    let cssClasses = `discount`;
+    let cssClasses = 'discount';
     let computedDiscount = null;
 
     if (props.className) {

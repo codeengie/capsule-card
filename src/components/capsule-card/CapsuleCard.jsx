@@ -2,10 +2,12 @@ import './CapsuleCard.scss';
 import Discount from "../discount/Discount.jsx";
 import Stats from "../stats/Stats.jsx";
 import Tags from "../tags/Tags.jsx";
+import Flag from "../flag/Flag.jsx";
 
 const CapsuleCard = (props) => {
     return (
         <div className="capsule-card">
+            <Flag className="capsule-card__flag"/>
             <a className="capsule-card__link" href="#">
                 <img className="capsule-card__poster" src={`/images/${props.data.media.poster}`} alt="Main capsule card image"/>
             </a>
