@@ -7,7 +7,7 @@ function App() {
     let content = null;
 
     if (games.length > 0) {
-        content = games.map((item, index) => <CapsuleCard key={index} data={item}/>);
+        content = games.map(item => <CapsuleCard key={item.gid} gdata={item} udata={user}/>);
     }
 
     return (

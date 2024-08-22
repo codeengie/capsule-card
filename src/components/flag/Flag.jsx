@@ -1,17 +1,14 @@
 import './Flag.scss';
 
-const Flag = ({...props}) => {
+const Flag = ({status = 'Wishlist', ...props}) => {
     let cssClasses = 'flag';
-    let content = 'On Wishlist';
 
     if (props.className) {
         cssClasses += ` ${props.className}`;
     }
 
-    // There should be some logic here where it changes the copy if the `--owned` modifier is detected
-
     return (
-        <div className={cssClasses}>{content}</div>
+        <div className={cssClasses}>{status}</div>
     )
 }
 

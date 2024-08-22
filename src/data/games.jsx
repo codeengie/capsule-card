@@ -1,5 +1,20 @@
 const games = [
     {
+        gid: "q8A5CCGUsm",
+        title: "Black Myth: Wukong",
+        price: 59.99,
+        discount: 0,
+        tags: ["Mythology", "Action RPG", "Action", "RPG", "Souls-like"],
+        reviews: {
+            count: 209968,
+            summary: "Overwhelmingly Positive"
+        },
+        media: {
+            poster: "black-myth-wukong-374x448.webp",
+            video: "black-myth-wukong-630x354.webm"
+        }
+    },
+    {
         gid: "gHVy33Begs",
         title: "Hogwarts Legacy",
         price: 59.99,
