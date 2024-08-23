@@ -32,6 +32,10 @@ const CapsuleCard = (props) => {
         videoRef.current.currentTime = 0; // Reset playback position to the start
     }
 
+    const handleAddToCart = () => {
+        console.log('Add To Cart');
+    }
+
     return (
         <div className="capsule-card" onMouseOver={handleVideoPlay} onMouseOut={handleVideoReset}>
             <Flag className="capsule-card__flag" status={setFlagStatus(props.gdata.gid)}/>
@@ -49,7 +53,7 @@ const CapsuleCard = (props) => {
                     <h1 className="capsule-card__title">{props.gdata.title}</h1>
                     <Stats className="capsule-card__stats" reviews={props.gdata.reviews}/>
                     <Tags className="capsule-card__tags" tags={props.gdata.tags}/>
-                    <Button className="capsule-card__button">Add To Cart</Button>
+                    <Button className="capsule-card__button" onClick={handleAddToCart}>Add To Cart</Button>
                 </div>
             </div>
             <Discount className="capsule-card__discount" discount={props.gdata.discount} price={props.gdata.price}/>
