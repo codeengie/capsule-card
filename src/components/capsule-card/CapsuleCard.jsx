@@ -4,6 +4,7 @@ import Discount from '../discount/Discount.jsx';
 import Stats from '../stats/Stats.jsx';
 import Tags from '../tags/Tags.jsx';
 import Flag from '../flag/Flag.jsx';
+import Button from "../button/Button.jsx";
 
 const CapsuleCard = (props) => {
     let videoRef = useRef(null);
@@ -40,7 +41,7 @@ const CapsuleCard = (props) => {
             <div className="capsule-card__content">
                 {/* Display a screenshot or video */}
                 <div className="capsule-card__media">
-                    <video className="capsule-card__video" ref={videoRef} loop>
+                    <video className="capsule-card__video" ref={videoRef}>
                         <source src={`/videos/${props.gdata.media.video}`} type="video/webm"/>
                     </video>
                 </div>
@@ -48,7 +49,7 @@ const CapsuleCard = (props) => {
                     <h1 className="capsule-card__title">{props.gdata.title}</h1>
                     <Stats className="capsule-card__stats" reviews={props.gdata.reviews}/>
                     <Tags className="capsule-card__tags" tags={props.gdata.tags}/>
-                    <button className="button capsule-card__button">Add to Cart</button>
+                    <Button className="capsule-card__button">Add To Cart</Button>
                 </div>
             </div>
             <Discount className="capsule-card__discount" discount={props.gdata.discount} price={props.gdata.price}/>
