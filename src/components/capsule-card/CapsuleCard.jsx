@@ -15,7 +15,7 @@ const CapsuleCard = (props) => {
         const wishlist = props.udata.wishlist.includes(id);
         let status = undefined; // Setting `undefined` so default prop value is used
 
-        // I know I can use Ternary Operator but this looks more readable especially if logic gets complicated
+        // I know I can use a Ternary Operator but this appears easier to read especially if logic gets complex
         if (owned) status = 'Owned';
         if (wishlist) status = 'On Wishlist';
         return status;
