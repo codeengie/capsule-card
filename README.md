@@ -13,7 +13,7 @@ This custom React component is a meticulously crafted recreation of Steam's icon
 ### Installation
 1. Clone the repository:
 ```bash
-git clone git@something.com:codeengie/capsule-card.git
+git clone git@github.com:codeengie/capsule-card.git
 ```
 2. Navigate into the project directory:
 ```bash
