@@ -12,6 +12,7 @@ function App() {
 
     return (
         <>
+            <h1 className="header">Demo</h1>
             <div className="wrap">
                 {content}
             </div>
