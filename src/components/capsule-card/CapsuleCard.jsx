@@ -40,13 +40,13 @@ const CapsuleCard = (props) => {
         <div className="capsule-card" onMouseOver={handleVideoPlay} onMouseOut={handleVideoReset}>
             <Flag className="capsule-card__flag" status={setFlagStatus(props.gdata.gid)}/>
             <a className="capsule-card__link" href="#">
-                <img className="capsule-card__poster" src={`/images/${props.gdata.media.poster}`} alt="Main capsule card image"/>
+                <img className="capsule-card__poster" src={`${import.meta.env.BASE_URL}images/${props.gdata.media.poster}`} alt="Main capsule card image"/>
             </a>
             <div className="capsule-card__content">
                 {/* Display a screenshot or video */}
                 <div className="capsule-card__media">
                     <video className="capsule-card__video" ref={videoRef}>
-                        <source src={`/videos/${props.gdata.media.video}`} type="video/webm"/>
+                        <source src={`${import.meta.env.BASE_URL}videos/${props.gdata.media.video}`} type="video/webm"/>
                     </video>
                 </div>
                 <div className="capsule-card__info">
