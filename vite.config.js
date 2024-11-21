@@ -11,6 +11,6 @@ export default defineConfig(({ command }) => {
   const isProd = command === 'build';
   return {
     plugins: [react()],
-    base: isProd ? '/capsule-card' : '/',
+    base: isProd ? '/capsule-card/' : '/',
   }
 })
