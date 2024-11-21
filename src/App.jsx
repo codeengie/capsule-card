@@ -1,7 +1,7 @@
 import './App.scss'
 import CapsuleCard from './components/capsule-card/CapsuleCard.jsx';
-import games from './data/games.jsx';
-import user from './data/user.jsx';
+import games from './data/games.json';
+import user from './data/user.json';
 
 function App() {
     let content = null;

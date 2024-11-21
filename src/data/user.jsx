@@ -1,9 +1,0 @@
-const user = {
-    uid: "nzKfAOT7O1",
-    uname: "madeupuser",
-    email: "madeupuser@nothing.com",
-    owned: ["gHVy33Begs", "L2Ucz6viT8", "2PgAOlzgVO"],
-    wishlist: ["kfqgc65YG9"]
-};
-
-export default user;
