@@ -1,5 +1,20 @@
 [
     {
+        "gid": "4WxCLY95In",
+        "title": "Warhammer 40,000: Space Marine 2",
+        "price": 59.99,
+        "discount": 0,
+        "tags": ["Warhammer 40K", "Action", "Third-Person Shooter"],
+        "reviews": {
+            "count": 87140,
+            "summary": "Very Positive"
+        },
+        "media": {
+            "poster": "warhammer-space-marine-374x448.webp",
+            "video": "warhammer-space-marine-630x354.webm"
+        }
+    },
+    {
         "gid": "q8A5CCGUsm",
         "title": "Black Myth: Wukong",
         "price": 59.99,
